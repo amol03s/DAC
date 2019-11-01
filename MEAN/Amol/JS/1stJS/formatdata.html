@@ -1,0 +1,42 @@
+<html>
+<head>
+<script src="formatdata.js">
+
+</script>
+</head>
+<body>
+<form>
+<table>
+<tr>
+    <td>Name:</td><td><input type="text" name="txt1" id="txt1"></td>
+</tr>
+<tr>
+    <th>Hobbies:</th>
+    <td><input type="checkbox" name="hobbies" id="reading" value="reading"/>Reading</br>
+        <input type="checkbox" name="hobbies" id="singing" value="singing"/>Singing</br>
+        <input type="checkbox" name="hobbies" id="playing" value="playing"/>Playing</td>
+</tr>
+<tr>
+    <td>Gender:</td>
+    <td><input type="radio" name="radiogen" id="Male" value="Male">Male
+        <input type="radio" name="radiogen" id="Female" value="Female">Female
+    </td>
+</tr>
+<tr>
+	<td>Degree</td>
+	<td><select name="select" id="de1" >
+		    <option value="select">select</option>
+		    <option value="BE">BE</option>
+		    <option value="MBA">MBA</option>
+	    </select>
+	 </td>
+	 	
+</tr>
+
+<tr><td><input type="button" name="btn" value="displaydata" onclick="displaydata()" ><td></tr>
+</table>
+</form>
+
+<span id="myid" ></span>
+</body>
+</html>

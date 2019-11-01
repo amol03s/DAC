@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function myaddition()
+{
+	console.log("1");
+	var num1=document.getElementById("no1").value;
+	var num2=document.getElementById("no2").value;
+	c=parseInt(num1)+parseInt(num2);
+	//document.write("addition is"+c);
+	//alert(c);
+	document.getElementById("myid").innerHTML="addition is "+c;
+}
+</script>
+</head>
+
+<body>
+<form>
+<table>
+<tr><td></td><td>No1:<input type="number" name="no1" id="no1"/></td> </tr>
+<tr><td></td><td>No2:<input type="number" name="no2" id="no2"/></td> </tr>
+<tr><td></td><td><input type="button" name="btn" value="addition" onclick="myaddition()"></td></tr>
+</table>
+</form>
+<p id="myid" ></p>
+</body>
+</html>

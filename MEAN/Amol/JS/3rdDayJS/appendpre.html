@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+<style>
+.myclass
+{
+ background-color: violet;
+ height:100;
+ width:100;
+
+
+}
+</style>
+<script src="../Scripts/jquery-1.6.2.js"></script>
+<script>
+$(document).ready(function(){
+$('#id1').click(function(){
+   var v=$('div p:last-child').clone();
+   $('#myid').append(v);
+});
+$('#id2').click(function(){
+   var v=$('<input type="text" name="txt"/>').clone();
+   $('#myid').prepend(v);
+});
+$('#id3').click(function(){
+   $('div p:last-child').remove();
+   
+});
+$('#id4').click(function(){
+   $('span').wrap('<div class="myclass">');
+   
+});
+
+});
+
+</script>
+<body>
+
+<span> This is span</span>
+<span> This is span</span>
+<div id="myid">
+<p>This is para</p>
+<p>This is para</p>
+<p>This is para</p>
+<p>This is para</p>
+</div>
+<input type="button" name="btn" id="id1" value="append"/>
+<input type="button" name="btn" id="id2" value="prepend"/>
+<input type="button" name="btn" id="id3" value="remove"/>
+<input type="button" name="btn" id="id4" value="wrap"/>
+</body>
+</html>

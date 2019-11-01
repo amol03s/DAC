@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+.myclass
+{
+ background-color:violet;
+ height:200;
+ width:300;
+
+}
+</style>
+<script src="../Scripts/jquery-1.6.2.js"></script>
+<script>
+
+$(document).ready(function(){
+$('div.myclass').slideUp();
+
+$('#btn1').click(function(){
+	$('div.myclass').slideDown("20000",function(){
+	$('#msg').html("SlideDown Complete");
+	});
+});
+
+$('#btn2').click(function(){
+	$('div.myclass').slideUp("20000",function(){
+	$('#msg').html("SlideUp Complete");
+	});
+});
+
+$('#btn3').click(function(){
+	$('div.myclass').slideToggle("20000",function(){
+	$('#msg').html("Slidetoggle Complete");
+	});
+});
+});
+
+
+</script>
+
+</head>
+<body>
+<div id="msg"></div>
+<input type="button" name="btn" id="btn1" value="slideDown">
+<input type="button" name="btn" id="btn2" value="slideUp">
+<input type="button" name="btn" id="btn3" value="slideToggle">
+<div class="myclass" >
+  <p> vaishnali </p>
+<div>
+</body>
+</html>
+

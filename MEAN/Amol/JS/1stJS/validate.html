@@ -1,0 +1,98 @@
+<html>
+<head>
+<script>
+function validatedata()
+{
+   var hb=validateHobbies(); 
+   var nm=validateName();
+   console.log("1");
+   if(nm==true &&  hb ==true)
+   {
+   	
+     return true; 
+   }
+   else
+   {
+     return false;
+   
+   }
+
+}
+function validateHobbies()
+{
+        var cnt=0;
+	var hobbie=document.getElementsByName("hobbies");
+	
+	for(var i=0;i<hobbie.length;i++)
+	{
+	   if(hobbie[i].checked==true)
+	   {
+	   cnt++;
+	   }
+	}
+       if(cnt<2)
+       {
+          document.getElementById("hbmsg").innerHTML="plz select atleast two hobbies";
+          return false;
+       }
+       else
+       {
+          return true;
+       
+       }
+
+}
+
+function validateName()
+{
+  //var myp=document.getElementById("nmmsg");
+  var txt=document.getElementById("txt1").value;
+  if(txt=="")
+  {
+      document.getElementById("nmmsg").innerHTML="Name cannot Be Empty";
+      return false;
+  }
+  else
+  {
+  	if(txt.length <= 3)
+  	{
+		document.getElementById("nmmsg").innerHTML="Name have Atleast 3 characters";
+		return false;
+	}
+	else
+	{
+		return true;
+	}  
+  }
+}
+</script>
+</head>
+
+
+<body>
+<form onsubmit="return validatedata()">
+<table>
+<tr>
+   <td>Name</td>
+   <td><input type="txt"  name="txt" id="txt1" ><span >*</span><p id="nmmsg"><p/></td>
+</tr>
+<tr>
+	<td>Hobbies</td>
+	<td>	<input type="checkbox" name="hobbies" id="reading" value="reading"/>Reading 
+		<input type="checkbox" name="hobbies" id="sleeping" value="sleeping"/>Sleeping
+		<input type="checkbox" name="hobbies" id="trecking" value="trecking"/>trecking &nbsp;&nbsp;<span id="hbmsg"></span>
+		
+	</td>
+</tr>
+<tr>
+   <td><input type="submit"  name="submit" value="dispalydata" ></td>
+</tr>
+
+
+
+</table>
+</form>
+</body>
+
+
+</html>
