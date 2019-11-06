@@ -1,0 +1,18 @@
+1. create a class Book to store book id,name,pages,price,author
+Write a menu driven program for the following
+1. Add a book
+2. Search book by author name
+3. Display all books with pages > given pages
+4. Display all books with price < given price
+5. Modify price of the book 
+6. exit
+
+2. Write a program to create a 2D array of size rows and cols.
+accept values of rows and cols from user.
+
+and do the following
+1. Accept matrix
+2. Transpose of matrix
+3. Find sum rowwise
+4. find sum columnwise
+5. display matrix

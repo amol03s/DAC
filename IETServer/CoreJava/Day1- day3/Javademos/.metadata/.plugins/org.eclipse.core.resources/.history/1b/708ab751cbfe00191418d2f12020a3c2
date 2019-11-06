@@ -1,0 +1,21 @@
+
+public class Person {
+	private int id;
+	private String name;
+    static int cnt;
+    
+    public Person() {
+    	id=cnt;
+    	cnt++;
+    	name=null;
+    }
+    public Person(String nm) {
+    	id=cnt;
+    	cnt++;
+    	name=nm;
+    }
+    public String toString() {
+    	return "Id : "+this.id+"\nName: "+this.name;
+    }
+    
+}

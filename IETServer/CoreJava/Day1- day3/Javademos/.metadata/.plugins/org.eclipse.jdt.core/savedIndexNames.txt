@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+F:\CDAC Data\IETaug19\Javademos\.metadata\.plugins\org.eclipse.jdt.core
+3532016904.index
+4122157038.index
+1303381641.index

@@ -1,0 +1,12 @@
+package com.training.test;
+
+import com.training.bean.Employee;
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		Employee e=new Employee("Kishori","Hr","Manager");
+
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Person {
+	private int id;
+	private String name;
+    static int cnt;
+    
+    public Person() {
+    	id=cnt;
+    	cnt++;
+    	name=null;
+    }
+}
