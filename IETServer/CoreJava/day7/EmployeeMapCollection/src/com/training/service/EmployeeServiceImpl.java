@@ -17,6 +17,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		String name =sc.next();
 		System.out.println("enter sal");
 		double sal =sc.nextDouble();
+		
 		Employee emp=  new Employee(id, name, sal);
 		hm.put(id, emp);
 	}
