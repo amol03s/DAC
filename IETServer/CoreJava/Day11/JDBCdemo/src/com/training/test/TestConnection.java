@@ -12,8 +12,8 @@ public class TestConnection {
 	public static void main(String[] args) {
 		try {
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-			String url="jdbc:mysql://localhost:3306/test";
-			Connection conn=DriverManager.getConnection(url,"root","root123");
+			String url="jdbc:mysql://192.168.10.71:3307/dac13";/*dac13 is db name*/
+			Connection conn=DriverManager.getConnection(url,"udac13","welcome");
 			if(conn!=null) {
 				System.out.println("connection done");
 			}
@@ -64,13 +64,7 @@ public class TestConnection {
 			}
 
 			
-			
-			
-			
-			
-			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

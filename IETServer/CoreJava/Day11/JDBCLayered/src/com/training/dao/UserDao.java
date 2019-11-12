@@ -1,5 +1,4 @@
-package com.trainng.dao;
-
+package com.training.dao;
 import com.training.beans.MyUser;
 
 public interface UserDao {

@@ -3,8 +3,8 @@ package com.training.service;
 import java.util.Scanner;
 
 import com.training.beans.MyUser;
-import com.trainng.dao.UserDao;
-import com.trainng.dao.UserDaoImpl;
+import com.training.dao.UserDao;
+import com.training.dao.UserDaoImpl;
 
 public class UserServiceImpl implements UserService {
     private UserDao udao;

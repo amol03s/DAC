@@ -1,4 +1,4 @@
-package com.trainng.dao;
+package com.training.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,11 +1,8 @@
 package com.training.test;
-
 import java.util.Scanner;
-
 import com.training.beans.MyUser;
 import com.training.service.UserService;
 import com.training.service.UserServiceImpl;
-
 public class TestJDBC {
 
 	public static void main(String[] args) {
