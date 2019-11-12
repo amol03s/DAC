@@ -1,10 +1,7 @@
 package com.training.test;
-
 import com.training.beans.MyTable;
 import com.training.thread.MyThread;
-
 public class TestThrad {
-
 	public static void main(String[] args) {
 		MyTable t=new MyTable();
 		MyTable u=new MyTable();
@@ -23,7 +20,6 @@ public class TestThrad {
 			
 			e.printStackTrace();
 		}
-		
 		System.out.println("Main ends here");
 	}
 

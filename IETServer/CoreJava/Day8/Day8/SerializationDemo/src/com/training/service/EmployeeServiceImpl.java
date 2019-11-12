@@ -1,5 +1,4 @@
 package com.training.service;
-
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,16 +9,12 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.List;
 import java.util.Scanner;
-
 import com.training.beans.Employee;
 
 public class EmployeeServiceImpl implements EmployeeService{
-
-	
 	public void readFile(File f, List<Employee> elist) {
 		try (ObjectInputStream ois=new ObjectInputStream(new FileInputStream(f));)
 			{
-			
 			try
 			{
 			while(true)
@@ -31,10 +26,9 @@ public class EmployeeServiceImpl implements EmployeeService{
 			{
 				System.out.println("Reached to end of the file");
 			}
-		} catch (FileNotFoundException e) {
-			
+		}catch(FileNotFoundException e){
 			e.printStackTrace();
-		} catch (IOException e) {
+		} catch(IOException e) {
 			
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
@@ -70,10 +64,8 @@ public class EmployeeServiceImpl implements EmployeeService{
 				oos.writeObject(e);
 			}
 		} catch (FileNotFoundException e) {
-			
 			e.printStackTrace();
 		} catch (IOException e) {
-			
 			e.printStackTrace();
 		}
 	}

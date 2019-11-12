@@ -1,5 +1,4 @@
 package com.training.beans;
-
 import java.io.Serializable;
 
 public class Employee implements Serializable{

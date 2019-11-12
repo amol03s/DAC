@@ -1,16 +1,13 @@
 package com.training.test;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import com.training.beans.Employee;
 import com.training.service.EmployeeService;
 import com.training.service.EmployeeServiceImpl;
 
 public class TestSerialization {
-
 	public static void main(String[] args) {
 		List<Employee> elist=new ArrayList<>();
 		EmployeeService es=new EmployeeServiceImpl();
@@ -43,6 +40,7 @@ public class TestSerialization {
 				}
 				break;
 			case 2:
+				f=new File("EmpData.txt");
 				System.out.println(elist);
 				break;
 			case 3:
