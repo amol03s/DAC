@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class SocketMyServer {
 	public static void main(String[] args) {
 		try {
-			ServerSocket ss=new ServerSocket(1022);
+			ServerSocket ss=new ServerSocket(4000);
 			System.out.println("Waiting for client request");
 			Socket s=ss.accept();
 			DataInputStream dis=new DataInputStream(s.getInputStream());

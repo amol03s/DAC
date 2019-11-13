@@ -7,13 +7,15 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
+import java.sql.CallableStatement;
+
 public class TestConnection {
 
 	public static void main(String[] args) {
 		try {
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-			String url="jdbc:mysql://192.168.10.71:3307/dac13";/*dac13 is db name*/
-			Connection conn=DriverManager.getConnection(url,"udac13","welcome");
+			String url="jdbc:mysql://localhost:3306/test";
+			Connection conn=DriverManager.getConnection(url,"root","root123");
 			if(conn!=null) {
 				System.out.println("connection done");
 			}
@@ -62,7 +64,21 @@ public class TestConnection {
 			else {
 				System.out.println("Insertion not  done");
 			}
+			System.out.println("callable demo");
+            CallableStatement cs=conn.prepareCall("{call myproc(?,?)}");
+            cs.setInt(1, 10);
+            cs.registerOutParameter(2,java.sql.Types.INTEGER);
+            cs.execute();
+            int cnt=cs.getInt(2);
+            System.out.println("no of emp in dept 10 :"+cnt);
+			
+			
+			
+			
+			
+			
 		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

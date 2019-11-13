@@ -9,7 +9,7 @@ public class SocketClient {
 	public static void main(String[] args) {
 		
 		try {
-			Socket s=new Socket("localhost",1022);
+			Socket s=new Socket("localhost",4000);
 			DataInputStream cdis=new DataInputStream(s.getInputStream());
 			DataOutputStream cdos=new DataOutputStream(s.getOutputStream());
 			Scanner sc=new Scanner(System.in);
