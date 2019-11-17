@@ -12,7 +12,7 @@
      <servlet-name>Test</servlet-name>
      <url-pattern>/hello</url-pattern>
   </servlet-mapping>
-  
+ 
   <servlet>
       <servlet-name>initparam</servlet-name>
       <servlet-class>com.training.servlet.InitParamServlet</servlet-class>
@@ -29,5 +29,4 @@
      <servlet-name>initparam</servlet-name>
      <url-pattern>/init</url-pattern>
   </servlet-mapping>
-  
 </web-app>

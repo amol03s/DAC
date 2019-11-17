@@ -18,7 +18,7 @@ public class InitParamServlet extends HttpServlet {
 		System.out.println("In Init param init method");
 		intRate=Integer.parseInt(c.getInitParameter("rate"));
 		Enumeration e=c.getInitParameterNames();
-		while(e.hasMoreElements()) {
+		while(e.hasMoreElements()){
 			String nm=(String)e.nextElement();
 			System.out.println(nm+"---->"+c.getInitParameter(nm));
 		}
@@ -37,8 +37,7 @@ public class InitParamServlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		response.setContentType("text/html");
 		out.println("<h1>Rate : "+ (loanAmt*intRate)+"</h1>");
-		
-		
+	
 	}
 
 }
