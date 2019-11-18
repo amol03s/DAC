@@ -12,9 +12,8 @@ public class MyConnection {
 		{
 			try {
 				DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-				conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","root123");
+				conn=DriverManager.getConnection("jdbc:mysql://192.168.10.71:3307/dac13","dac13","welcome");
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
@@ -27,7 +26,6 @@ public class MyConnection {
 			try {
 				conn.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

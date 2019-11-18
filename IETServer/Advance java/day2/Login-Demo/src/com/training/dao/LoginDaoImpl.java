@@ -13,7 +13,7 @@ public class LoginDaoImpl implements LoginDao {
 	static {
 		conn=MyConnection.getMyConnection();
 		try {
-			psvalid=conn.prepareStatement("select * from users where uname=? and password= ?");
+			psvalid=conn.prepareStatement("select * from users where name=? and password= ?");
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -31,7 +31,6 @@ public class LoginDaoImpl implements LoginDao {
 				return u1;
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
